@@ -1,0 +1,90 @@
+---
+title: Introduction
+description: 'Welcome to HeroBrain - AI Memory Infrastructure'
+---
+
+# Welcome to HeroBrain
+
+HeroBrain is the memory infrastructure platform for AI applications. Build AI that remembers everything.
+
+## Quick Start
+
+Get started in 15 minutes:
+
+<Steps>
+  <Step title="Sign up">
+    Create your free account at [herobrain.ai](https://herobrain.ai)
+  </Step>
+  <Step title="Get your API key">
+    Generate an API key from your [dashboard](https://herobrain.ai/api-platform)
+  </Step>
+  <Step title="Make your first call">
+    Store your first memory with our API
+  </Step>
+</Steps>
+
+## What is HeroBrain?
+
+HeroBrain provides production-ready memory infrastructure for AI applications. Instead of building your own vector database, caching layer, and memory management system, use HeroBrain's unified API.
+
+### Key Features
+
+- **Unified Memory API**: One API for all memory types (episodic, semantic, prospective)
+- **Semantic Search**: Vector search with hybrid ranking
+- **Multi-tenant**: Built-in tenant isolation and RBAC
+- **Production Ready**: 99.9% uptime SLA, SOC 2 compliant
+- **SDK Support**: TypeScript, Python, REST API
+
+## Example
+
+```typescript
+import { HeroBrain } from '@herobrain/sdk';
+
+const hb = new HeroBrain('your-api-key');
+
+// Store a memory
+await hb.memory.create({
+  content: "User prefers dark mode",
+  type: "semantic",
+  tenantId: "user-123"
+});
+
+// Search memories
+const results = await hb.memory.search({
+  query: "What are the user's preferences?",
+  tenantId: "user-123"
+});
+```
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Getting Started"
+    icon="rocket"
+    href="/getting-started"
+  >
+    Quick start guide to build your first integration
+  </Card>
+  <Card
+    title="API Reference"
+    icon="code"
+    href="/api-reference"
+  >
+    Complete API documentation and examples
+  </Card>
+  <Card
+    title="Authentication"
+    icon="key"
+    href="/authentication"
+  >
+    Learn how to authenticate your API requests
+  </Card>
+  <Card
+    title="SDKs"
+    icon="cube"
+    href="/sdks"
+  >
+    TypeScript and Python SDK documentation
+  </Card>
+</CardGroup>

@@ -29,7 +29,7 @@
     {
       "group": "Getting Started",
       "pages": [
-        "index",
+        "introduction",
         "getting-started",
         "authentication"
       ]
