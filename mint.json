@@ -1,0 +1,54 @@
+{
+  "name": "HeroBrain",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://herobrain.ai"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#D97706",
+    "light": "#FBBF24",
+    "dark": "#B45309",
+    "anchors": {
+      "from": "#D97706",
+      "to": "#B45309"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Dashboard",
+      "url": "https://herobrain.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://herobrain.ai/onboarding"
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "index",
+        "getting-started",
+        "authentication"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference",
+        "sdks"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/tinyspaceturtle/TinyBrain-Alpha"
+  },
+  "api": {
+    "baseUrl": "https://api.herobrain.ai",
+    "auth": {
+      "method": "bearer"
+    }
+  }
+}
